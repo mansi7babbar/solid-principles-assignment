@@ -1,8 +1,8 @@
 package com.knoldus
 
 /**
- * Contains abstract methods of length and width
- * Contains method to calculate area of SpecialParallelogram
+ * Contains abstract methods of length and width.
+ * Contains method to calculate area of SpecialParallelogram.
  */
 trait SpecialParallelogram {
   def length: Double
@@ -13,10 +13,10 @@ trait SpecialParallelogram {
 }
 
 /**
- * Provide implementations for length and width methods
+ * Provide implementations for length and width methods.
  *
- * @param getLength Class parameter for length
- * @param getWidth  Class parameter for width
+ * @param getLength Class parameter for length.
+ * @param getWidth  Class parameter for width.
  */
 class RectangleParallelogram(getLength: Double, getWidth: Double) extends SpecialParallelogram {
   def length: Double = getLength
@@ -25,9 +25,9 @@ class RectangleParallelogram(getLength: Double, getWidth: Double) extends Specia
 }
 
 /**
- * Provide implementations for length and width methods
+ * Provide implementations for length and width methods.
  *
- * @param side Class parameter for both length and width
+ * @param side Class parameter for both length and width.
  */
 class SquareParallelogram(side: Double) extends SpecialParallelogram {
   def length: Double = side
